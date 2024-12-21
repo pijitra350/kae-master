@@ -1,0 +1,15 @@
+import { useState } from "react";
+import Mymenu from "./templates/Mymenu";
+import Myfooter from "./templates/Myfooter";
+
+export default function Mycalculator() {
+    const [countplus, setCountPlus1] = useState(0);
+
+    const handleCountPlus1 = () => {
+        alert('Count plus 1....');
+    }
+
+    return (
+        <></>
+    );
+}

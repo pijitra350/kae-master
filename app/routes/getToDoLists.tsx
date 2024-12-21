@@ -1,4 +1,6 @@
 import { toDoItems } from "./toDoLists";
+import Mymenu from "./templates/Mymenu";
+import Myfooter from "./templates/Myfooter";
 
 function CompletedCheck ({c} : {c: boolean}) {
     if(c) 
@@ -25,9 +27,11 @@ export default function ToDoLists() {
  );
     
     return (
-    <div className ="m-3"> 
-        <h1 className = "text-x1">สิ่งที่ต้องทำ...</h1>
+    <div className ="m-0"> 
+    <Mymenu/>
+     <h1 className = "text-x1">สิ่งที่ต้องทำ...</h1>
         {listItems}
+        <Myfooter />
         </div>
     );
 
